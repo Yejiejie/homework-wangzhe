@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_name }}</h2>
+
+<p>返回以下结果：</p>
+<table style="word-break:break-all">
+<h3>被动技能：{{ output_skill_passive }}</h3>
+<h3>1技能：{{ output_skill_1 }}</h3>
+<h3>2技能：{{ output_skill_2 }}</h3>
+<h3>3技能：{{ output_skill_3 }}</h3>
+<h3>背景故事：{{ output_story }}</h3>
+</table>
+{% endblock %}

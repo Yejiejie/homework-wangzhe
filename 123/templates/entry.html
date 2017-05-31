@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/search4'>
+<table>
+<th colspan="2">请输入你想搜索的英雄名称：</th>
+<tr><td>搜索：</td><td><input name='input_hero_name' type='TEXT' value='请输入你想搜索的英雄名称'></td></tr>
+</table>
+<p>准备就绪后, 单击此按钮：</p>
+<p><input value='开始' type='SUBMIT'></p>
+</form>
+
+{% endblock %}
